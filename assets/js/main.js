@@ -48,13 +48,13 @@
 
 					flexboxFixTimeoutId = setTimeout(function() {
 
-						if ($wrapper.prop('scrollHeight') > $window.height())
-							alert("yes");
+						if ($wrapper.prop('scrollHeight') > $window.height()) {
 							$wrapper.css('height', 'auto');
+						}
 						else
+							{
 							$wrapper.css('height', '100vh');
-													alert("no");
-
+							}
 
 					}, 250);
 
