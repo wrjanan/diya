@@ -22,7 +22,7 @@
 			$wrapper = $('#wrapper'),
 			$header = $('#header'),
 			$footer = $('#footer'),
-			$main = $('#main2'),
+			$main = $('#main'),
 			$main_articles = $main.children('article');
 
 		// Disable animations/transitions until the page has loaded.
