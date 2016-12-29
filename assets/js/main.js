@@ -22,7 +22,7 @@
 			$wrapper = $('#wrapper'),
 			$header = $('#header'),
 			$footer = $('#footer'),
-			$main = $('#main'),
+			$main = $('#main2'),
 			$main_articles = $main.children('article');
 
 		// Disable animations/transitions until the page has loaded.
@@ -677,7 +677,7 @@
 					windowMargin: 50
 				});
 
-				/** Hack: Set margins to 0 when 'xsmall' activates.
+				// Hack: Set margins to 0 when 'xsmall' activates.
 					skel
 						.on('-xsmall', function() {
 							$main2[0]._poptrox.windowMargin = 50;
@@ -685,7 +685,7 @@
 						.on('+xsmall', function() {
 							$main2[0]._poptrox.windowMargin = 0;
 						});
-*/
+
 	});
 
 })(jQuery);
