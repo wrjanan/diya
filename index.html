@@ -34,11 +34,11 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 					</div>
 				</div>
 				<nav>
-					<ul>
-						<li><a href="#intro">Intro</a></li>
-						<li><a href="#work">Work</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
+					<ul style="cursor:pointer;">
+						<li onclick="jumpto('intro');"><a>Intro</a></li>
+						<li onclick="jumpto('work');"><a >Work</a></li>
+						<li onclick="jumpto('about');"><a >About</a></li>
+						<li onclick="jumpto('contact');"><a >Contact</a></li>
 						<!--<li><a href="#elements">Elements</a></li>-->
 					</ul>
 				</nav>
@@ -55,8 +55,8 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 					<p>Firstly, this gallery, like most galleries, are for your eyes to feast and enjoy. The images that have been captured in a timeless fashion by my guidance and equipment is best seen by your very own eyes. For your viewing pleasure, and if you require assistance in acquiring rights for the images, I am here to assist you</p>
 					<p>Secondly, I want to put my awesome models out here, they are a marvel of this world, as are you. The world deserves to be happy and if our work makes you happy, I will be too.</p>
 					<p>Lastly, it is a great honour to put our work up here for all to see. It drives me to perfect my craft and I wish to be the very best.</p>
-					<p>Do check out if  <a href="#work">these are to your pleasure</a>.</p>
-					<p>Do not forget to voice any queries and comments  <a href="#contact">here</a>.</p>
+					<p>Do check out if  <a style="cursor:pointer;" onclick="jumpto('work');">these are to your pleasure</a>.</p>
+					<p>Do not forget to voice any queries and comments  <a style="cursor:pointer;" onclick="jumpto('contact');">here</a>.</p>
 				</article>
 
 				<!-- Work -->
@@ -183,7 +183,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 					<span class="image main"><img src="images/work/11.jpg" alt="" /></span>
 					<p>Photography has been a passion since 12 years of age. Am known for quality work in high fashion, though commercial jobs are much welcomed too. </p>
 					<p>At Diya M. Studios, we strive to be reliable and consistent. As such, once a date and time is fixed for a shoot, it is fixed and we will be there. Please understand that a lot of effort is put into collaborative shoots and we respect the time that others are willing to invest in them. Henceforth, we look forward to a long term working relationship, as a professional and reliable photography studio for your quality photography needs.</p>
-					<p>Find out how to get in touch with us <a href="#contact">here</a>.</p>
+					<p>Find out how to get in touch with us <a style="cursor:pointer;" onclick="jumpto('contact');">here</a>.</p>
 
 				</article>
 
@@ -476,7 +476,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- BG -->
 		<div id="bg"></div>
-
+		
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.poptrox.min.js"></script>
@@ -484,5 +484,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 
+		<script type="text/javascript">
+			
+			function jumpto(anchor){
+				window.location.href = "#"+anchor;
+			}
+		</script>
 	</body>
 </html>
