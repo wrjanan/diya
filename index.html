@@ -11,32 +11,32 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" 
-      type="image/png" 
-      href="favicon.png">
+			  type="image/png" 
+			  href="favicon.png">
 
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-91653702-1', 'auto');
-		  ga('send', 'pageview');
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+									})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-91653702-1', 'auto');
+			ga('send', 'pageview');
 
 		</script>
-		
+
 
 		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+									})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-91653702-2', 'auto');
-		  ga('send', 'pageview');
+			ga('create', 'UA-91653702-2', 'auto');
+			ga('send', 'pageview');
 
 		</script>
 	</head>
@@ -55,22 +55,35 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 						<p><!--[-->international photographer</p>
 					</div>
 				</div>
-				<nav>
+				<nav class="use-middle">
 					<ul style="cursor:pointer;">
-						<li onclick="jumpto('intro');"><a>Intro</a></li>
-						<li onclick="jumpto('work');"><a >Work</a></li>
-						<li onclick="jumpto('about');"><a >About</a></li>
-						<li onclick="jumpto('contact');"><a >Contact</a></li>
+						<li onclick="jumpto('about');"><a>Intro</a></li>
+						<li id="workNav" onclick="openDropdown();"><a>Work</a></li>
+						<li class="is-middle" onclick="jumpto('contact');"><a >Contact</a></li>
+						<li onclick="jumpto('press');"><a >Press</a></li>
+						<!--<li><a href="#elements">Elements</a></li>-->
+					</ul>
+
+				</nav>
+
+
+				<nav id="workNavDropdown">
+
+					<ul style="cursor:pointer;">
+						<li onclick="work('commercial');"><a>Commercial</a></li>
+						<li onclick="work('fashion');"><a>Fashion</a></li>
+						<li onclick="work('work');"><a >Personal</a></li>
 						<!--<li><a href="#elements">Elements</a></li>-->
 					</ul>
 				</nav>
 			</header>
 
+
 			<!-- Main -->
 			<div id="main">
 
 				<!-- Intro -->
-				<article id="intro">
+				<article id="about">
 					<h2 class="major">Intro</h2>
 					<span class="image main"><img src="images/work/5.jpg" alt="" /></span>
 					<p>Good day, allow me to introduce this e-gallery, as it serves various purposes.</p>
@@ -80,159 +93,349 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 					<p>Do check out my  <a  style="cursor:pointer;" onclick="jumpto('work');">work</a>.</p>
 					<p>Do not forget to voice any queries and comments  <a style="cursor:pointer;" onclick="jumpto('contact');">here</a>.</p>
-				</article>
+					<br>
+					<br>
+					<h2 class="major">About</h2>
+					<span class="image main"><img src="images/work/11.jpg" alt="" /></span>
+					
+					<p>Photography has been a passion since 12 years of age. Am known for quality work in high fashion, though commercial jobs are much welcomed too. </p>
+					<p>At Diya M. Studios, we strive to be reliable and consistent. As such, once a date and time is fixed for a shoot, it is fixed and we will be there. Please understand that a lot of effort is put into collaborative shoots and we respect the time that others are willing to invest in them. Henceforth, we look forward to a long term working relationship, as a professional and reliable photography studio for your quality photography needs.</p>
+					<p>Find out how to get in touch with us <a style="cursor:pointer;" onclick="jumpto('contact');">here</a>.</p>
+					
 
-				<!-- Work -->
+				</article>
+				
+				
+
+
+
+
+				
+				<!-- Personal -->
 				<article id="work">
 					<h2 class="major">Work</h2>
 					<span class="image main"><img src="images/work/0.jpg" alt="" /></span>
 					<p><i>Something beautiful</i><br>It's such a joy to put these lovely models in the best light possible.</p>
-					
+
 					<div id="main2">
-						<article class="thumb">
+						
+						<!-- commercial -->
+						<article class="thumb commercial">
+							<a href="https://i.imgur.com/3guUxSIl.jpg" class="image"><img src="https://i.imgur.com/3guUxSIl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb commercial">
+							<a href="https://i.imgur.com/DwKK032l.jpg" class="image"><img src="https://i.imgur.com/DwKK032l.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb commercial">
+							<a href="https://i.imgur.com/9gzKgHJl.jpg" class="image"><img src="https://i.imgur.com/9gzKgHJl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb commercial">
+							<a href="https://i.imgur.com/hiJBrTbl.jpg" class="image"><img src="https://i.imgur.com/hiJBrTbl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb commercial">
+							<a href="https://i.imgur.com/Phi3ZJbl.jpg" class="image"><img src="https://i.imgur.com/Phi3ZJbl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb commercial">
+							<a href="https://i.imgur.com/HPdK8KFl.jpg" class="image"><img src="https://i.imgur.com/HPdK8KFl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb commercial">
+							<a href="https://i.imgur.com/H8rScuIl.jpg" class="image"><img src="https://i.imgur.com/H8rScuIl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb commercial">
+							<a href="https://i.imgur.com/3zqP08Ml.jpg" class="image"><img src="https://i.imgur.com/3zqP08Ml.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb commercial">
+							<a href="https://i.imgur.com/1NpVvGul.jpg" class="image"><img src="https://i.imgur.com/1NpVvGul.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb commercial">
+							<a href="https://i.imgur.com/sLJiDSal.jpg" class="image"><img src="https://i.imgur.com/sLJiDSal.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb commercial">
+							<a href="https://i.imgur.com/TRRtlcJl.jpg" class="image"><img src="https://i.imgur.com/TRRtlcJl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb commercial">
+							<a href="https://i.imgur.com/CdcoESjl.jpg" class="image"><img src="https://i.imgur.com/CdcoESjl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb commercial">
+							<a href="https://i.imgur.com/JQNhSXfl.jpg" class="image"><img src="https://i.imgur.com/JQNhSXfl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb commercial">
+							<a href="https://i.imgur.com/Q4l8YJxl.jpg" class="image"><img src="https://i.imgur.com/Q4l8YJxl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb commercial">
+							<a href="https://i.imgur.com/6uPDWYRl.jpg" class="image"><img src="https://i.imgur.com/6uPDWYRl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb commercial">
+							<a href="https://i.imgur.com/Pn69Q78l.jpg" class="image"><img src="https://i.imgur.com/Pn69Q78l.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb commercial">
+							<a href="https://i.imgur.com/WHdbsLOl.jpg" class="image"><img src="https://i.imgur.com/WHdbsLOl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb commercial">
+							<a href="https://i.imgur.com/58wiMLul.jpg" class="image"><img src="https://i.imgur.com/58wiMLul.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						
+						
+						
+						<!-- fashion -->
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/I8ymVOHl.jpg" class="image"><img src="https://i.imgur.com/I8ymVOHl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/ijYSZjXl.jpg" class="image"><img src="https://i.imgur.com/ijYSZjXl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/masASPal.jpg" class="image"><img src="https://i.imgur.com/masASPal.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/sMYMsqVl.jpg" class="image"><img src="https://i.imgur.com/sMYMsqVl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/pDn9hljl.jpg" class="image"><img src="https://i.imgur.com/pDn9hljl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/frUFoNdl.jpg" class="image"><img src="https://i.imgur.com/frUFoNdl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/DtDdcGSl.jpg" class="image"><img src="https://i.imgur.com/DtDdcGSl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/Lu2e5ecl.jpg" class="image"><img src="https://i.imgur.com/Lu2e5ecl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/uuGUWZRl.jpg" class="image"><img src="https://i.imgur.com/uuGUWZRl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/1nHQmZTl.jpg" class="image"><img src="https://i.imgur.com/1nHQmZTl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/EWNFFo8l.jpg" class="image"><img src="https://i.imgur.com/EWNFFo8l.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/8JJfIuyl.jpg" class="image"><img src="https://i.imgur.com/8JJfIuyl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/H9x70lxl.jpg" class="image"><img src="https://i.imgur.com/H9x70lxl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/Sv2Iyp4l.jpg" class="image"><img src="https://i.imgur.com/Sv2Iyp4l.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/1T5IGoql.jpg" class="image"><img src="https://i.imgur.com/1T5IGoql.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/eL1uiO4l.jpg" class="image"><img src="https://i.imgur.com/eL1uiO4l.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/fVFyVVZl.jpg" class="image"><img src="https://i.imgur.com/fVFyVVZl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/IJPCwLSl.jpg" class="image"><img src="https://i.imgur.com/IJPCwLSl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/RKtgQf3l.jpg" class="image"><img src="https://i.imgur.com/RKtgQf3l.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/adF0tf5l.jpg" class="image"><img src="https://i.imgur.com/adF0tf5l.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						<article class="thumb fashion">
+							<a href="https://i.imgur.com/T6MgeCAl.jpg" class="image"><img src="https://i.imgur.com/T6MgeCAl.jpg" alt="" /></a>
+							<h2> </h2>
+							<p></p>
+						</article>
+						
+						<!-- personal -->
+						<article class="thumb personal">
 							<a href="images/work/1.jpg" class="image"><img src="images/work/1.jpg" alt="" /></a>
 							<h2>Altynaya </h2>
 							<p></p>
 						</article>
-						<article class="thumb">
+						<article class="thumb personal">
 							<a href="images/work/2.jpg" class="image"><img src="images/work/2.jpg" alt="" /></a>
 							<h2>Altynaya </h2>
 							<p></p>
 						</article>
-						<article class="thumb">
+						<article class="thumb personal">
 							<a href="images/work/3.jpg" class="image"><img src="images/work/3.jpg" alt="" /></a>
 							<h2>Victoria </h2>
 							<p></p>
 						</article>
-						<article class="thumb">
+						<article class="thumb personal">
 							<a href="images/work/4.jpg" class="image"><img src="images/work/4.jpg" alt="" /></a>
 							<h2>Victoria </h2>
 							<p></p>
 						</article>
-						<article class="thumb">
+						<article class="thumb personal">
 							<a href="images/work/5.jpg" class="image"><img src="images/work/5.jpg" alt="" /></a>
 							<h2>Victoria </h2>
 							<p></p>
 						</article>
-						<article class="thumb">
+						<article class="thumb personal">
 							<a href="images/work/6.jpg" class="image"><img src="images/work/6.jpg" alt="" /></a>
 							<h2>Victoria</h2>
 							<p></p>
 						</article>
-						<article class="thumb">
+						<article class="thumb personal">
 							<a href="images/work/7.jpg" class="image"><img src="images/work/7.jpg" alt="" /></a>
 							<h2>Eva Müllerová</h2>
 							<p></p>
 						</article>
-						<article class="thumb">
+						<article class="thumb personal">
 							<a href="images/work/8.jpg" class="image"><img src="images/work/8.jpg" alt="" /></a>
 							<h2>Natalia Urbanova</h2>
 							<p></p>
 						</article>
-						<article class="thumb">
+						<article class="thumb personal">
 							<a href="images/work/9.jpg" class="image"><img src="images/work/9.jpg" alt="" /></a>
 							<h2>Katarzyna Trojnar</h2>
 							<p></p>
 						</article>
-                        <!-- -->
-						<article class="thumb">
+						<!-- -->
+						<article class="thumb personal">
 							<a href="images/work/10.jpg" class="image"><img src="images/work/10.jpg" alt="" /></a>
 							<h2>Katarzyna Trojnar</h2>
 							<p></p>
 						</article>
-						<article class="thumb">
+						<article class="thumb personal">
 							<a href="images/work/11.jpg" class="image"><img src="images/work/11.jpg" alt="" /></a>
 							<h2></h2>
 							<p></p>
 						</article>
-						<article class="thumb">
+						<article class="thumb personal">
 							<a href="images/work/12.jpg" class="image"><img src="images/work/12.jpg" alt="" /></a>
 							<h2></h2>
 							<p></p>
 						</article>
-						<article class="thumb">
+						<article class="thumb personal">
 							<a href="images/work/13.jpg" class="image"><img src="images/work/13.jpg" alt="" /></a>
 							<h2>Laura Aleks</h2>
 							<p></p>
 						</article>
-						<article class="thumb">
+						<article class="thumb personal">
 							<a href="images/work/14.jpg" class="image"><img src="images/work/14.jpg" alt="" /></a>
 							<h2>Laura Aleks</h2>
 							<p></p>
 						</article>
-						<article class="thumb">
+						<article class="thumb personal">
 							<a href="images/work/15.jpg" class="image"><img src="images/work/15.jpg" alt="" /></a>
 							<h2>Laura Aleks</h2>
 							<p></p>
 						</article>
-						<article class="thumb">
+						<article class="thumb personal">
 							<a href="images/work/16.jpg" class="image"><img src="images/work/16.jpg" alt="" /></a>
 							<h2>Laura Aleks</h2>
 							<p></p>
 						</article>
-						<article class="thumb">
+						<article class="thumb personal">
 							<a href="images/work/17.jpg" class="image"><img src="images/work/17.jpg" alt="" /></a>
 							<h2>Laura Aleks</h2>
 							<p></p>
 						</article>
-						<article class="thumb">
+						<article class="thumb personal">
 							<a href="images/work/20.jpg" class="image"><img src="images/work/20.jpg" alt="" /></a>
 							<h2></h2>
 							<p></p>
 						</article>
-						<article class="thumb">
+						<article class="thumb personal">
 							<a href="images/work/19.jpg" class="image"><img src="images/work/19.jpg" alt="" /></a>
 							<h2></h2>
 							<p></p>
 						</article>
-						<article class="thumb">
+						<article class="thumb personal">
 							<a href="images/work/18.jpg" class="image"><img src="images/work/18.jpg" alt="" /></a>
 							<h2>Anastasia</h2>
 							<p></p>
 						</article>
-						<article class="thumb">
+						<article class="thumb personal">
 							<a href="images/work/21.jpg" class="image"><img src="images/work/21.jpg" alt="" /></a>
 							<h2>Anastasia</h2>
 							<p></p>
 						</article>
 					</div>
-					
-					
-				</article>
 
-				<!-- About -->
-				<article id="about">
-					<h2 class="major">About</h2>
-					<span class="image main"><img src="images/work/11.jpg" alt="" /></span>
-					<p>Photography has been a passion since 12 years of age. Am known for quality work in high fashion, though commercial jobs are much welcomed too. </p>
-					<p>At Diya M. Studios, we strive to be reliable and consistent. As such, once a date and time is fixed for a shoot, it is fixed and we will be there. Please understand that a lot of effort is put into collaborative shoots and we respect the time that others are willing to invest in them. Henceforth, we look forward to a long term working relationship, as a professional and reliable photography studio for your quality photography needs.</p>
-					<p>Find out how to get in touch with us <a style="cursor:pointer;" onclick="jumpto('contact');">here</a>.</p>
 
 				</article>
 
 				<!-- Contact -->
 				<article id="contact">
 					<h2 class="major">Contact</h2>
-<!--
-					<form method="post" action="#">
-						<div class="field half first">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
-						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input type="text" name="email" id="email" />
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="4"></textarea>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" value="Send Message" class="special" /></li>
-							<li><input type="reset" value="Reset" /></li>
-						</ul>
-					</form>
--->
+					
 					<p>Do like and follow the social links below for our latest gigs and updates. Or if you have any further queries and requests you will like, drop a message on the <a href="https://www.facebook.com/DiyaMPhotography/">Facebook Page</a> and we will be sure to find the best photographing set up for your needs.</p>
 					<p>Always on the look out for quality retouchers, if you are one, hit me up!</p>
 
@@ -241,6 +444,72 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 						<li><a href="https://www.instagram.com/d.iviixiii/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="http://www.modelmayhem.com/DeeptiMukherjee" class="icon fa-users"><span class="label">ModelMayhem</span></a></li>
 					</ul>
+					
+					<br>
+					<br>
+					<section>
+						<h3 class="major">Or you can send me an e-mail</h3>
+						<form method="post" action="http://formspree.io/powerpulper@gmail.com">
+							<div class="field half first">
+								<label for="demo-name">Name</label>
+								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Anastasia" />
+							</div>
+							<div class="field half">
+								<label for="demo-email">Email</label>
+								<input type="email" name="demo-email" id="demo-email" value="" placeholder="anastasia@luxuryfashion.com" />
+							</div>
+							<div class="field">
+								<label for="demo-category">Category</label>
+								<div class="select-wrapper">
+									<select name="demo-category" id="demo-category">
+										<option value="">-</option>
+										<option value="1">Ad Hoc</option>
+										<option value="1">Collaboration </option>
+										<option value="1">Commercial </option>
+										<option value="1">Feature Request</option>
+										<option value="1">High Fashion</option>
+										<option value="1">Product</option>
+										<option value="1">Video</option>
+										<option value="1">Others</option>
+									</select>
+								</div>
+							</div>
+							<div class="field half first">
+								<input type="radio" id="priority-low" name="priority" checked>
+								<label for="priority-low">Low</label>
+							</div>
+							<div class="field half">
+								<input type="radio" id="priority-high" name="priority">
+								<label for="priority-high">High</label>
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" class="special" /></li>
+								<li><input type="reset" value="Reset" /></li>
+							</ul>
+						</form>
+					</section>
+					
+				</article>
+
+				<!-- Clients & Press -->
+				<article id="press">
+					<h2 class="major">Press</h2>
+
+					<h4>Vogue Italia Photo Vogue Feature</h4>
+					
+					<img style="width:100%;" src="https://static.wixstatic.com/media/2027ff_5c741a79f8ee495a9804be27a63c8521~mv2.jpg/v1/fill/w_1190,h_332,al_c,q_90/2027ff_5c741a79f8ee495a9804be27a63c8521~mv2.webp">
+
+
+					
+					<h4>Harper's Bazaar Photography Awards 2014 Winner</h4>
+					
+					<img style="width:100%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Harper%27s_Bazaar_Logo.jpg/1600px-Harper%27s_Bazaar_Logo.jpg">
+					
+
 				</article>
 
 				<!-- Elements -->
@@ -499,7 +768,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- BG -->
 		<div id="bg"></div>
-		
+
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.poptrox.min.js"></script>
@@ -508,10 +777,134 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<script src="assets/js/main.js"></script>
 
 		<script type="text/javascript">
-			
-			function jumpto(anchor){
+
+			var workNav = document.getElementById("workNav");
+			var workNavDropdown = document.getElementById("workNavDropdown");
+
+			function jumpto(anchor){			
+				workNav.classList.remove("active");
+				workNavDropdown.classList.remove("shown");
+
 				window.location.href = "#"+anchor;
 			}
+
+			function openDropdown(){
+				console.log("hello");
+
+				workNav.classList.add("active");
+				workNavDropdown.classList.add("shown");
+			}
+			
+			
+			function work(type) {
+				if(type === 'work') {
+					//alert(type);
+					
+					$('#main2 article').hide();
+					$('#main2 article.personal').show();
+					
+					jumpto('work');
+				} else if( type === 'commercial') {
+
+					$('#main2 article').hide();
+					$('#main2 article.commercial').show();
+					
+					jumpto('work');
+				} else if( type === 'fashion') {
+					
+					$('#main2 article').hide();
+					$('#main2 article.fashion').show();
+					
+					jumpto('work');
+				}
+			}
+			
+			function buildWork(image) {
+				//function to build image thumbnails
+				return "<article class='thumb'><a  class='image'><img src='" + image.link + 
+					"' alt='' /></a><h2>" + image.name + 
+					"</h2><p></p></article>"
+			}
+			
+			var fashion = [{
+				link : 'http://i.imgur.com/I8ymVOHl.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/DtDdcGSl.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/Lu2e5ecl.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/eL1uiO4l.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/masASPal.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/sMYMsqVl.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/frUFoNdl.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/uuGUWZRl.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/ijYSZjXl.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/EWNFFo8l.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/pDn9hljl.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/8JJfIuyl.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/H9x70lxl.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/1nHQmZTl.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/1T5IGoql.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/fVFyVVZl.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/IJPCwLSl.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/RKtgQf3l.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/adF0tf5l.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/Sv2Iyp4l.jpg',
+				name : ''
+			},{
+				link : 'https://i.imgur.com/T6MgeCAl.jpg',
+				name : ''
+			}]
+			
+			/*
+			window.onload = function (){ 
+
+				var workNav = document.getElementById("workNav");
+				var workNavPosition = workNav.getBoundingClientRect();
+
+				var workNavDropdown = document.getElementById("workNavDropdown");
+				console.log(workNavDropdown.style.top)
+
+				workNavDropdown.style.top = workNavPosition.bottom + "px";
+				console.log(workNavDropdown.style.top)
+
+			}
+			*/
 		</script>
 	</body>
 </html>

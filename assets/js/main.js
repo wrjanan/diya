@@ -21,6 +21,7 @@
 			$body = $('body'),
 			$wrapper = $('#wrapper'),
 			$header = $('#header'),
+			$workNavDropdown = $('#workNavDropdown'),
 			$footer = $('#footer'),
 			$main = $('#main'),
 			$main_articles = $main.children('article');
@@ -65,7 +66,7 @@
 		// Nav.
 			var $nav = $header.children('nav'),
 				$nav_li = $nav.find('li');
-
+/*
 			// Add "middle" alignment classes if we're dealing with an even number of items.
 				if ($nav_li.length % 2 == 0) {
 
@@ -73,7 +74,9 @@
 					$nav_li.eq( ($nav_li.length / 2) ).addClass('is-middle');
 
 				}
-
+*/
+		
+		
 		// Main.
 			var	delay = 325,
 				locked = false;

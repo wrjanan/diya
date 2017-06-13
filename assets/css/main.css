@@ -1289,6 +1289,11 @@
 					border-left: 0;
 				}
 
+				#header nav ul li.active {
+					background-color: rgba(255, 255, 255, 0.175);
+				}
+
+
 				#header nav ul li a {
 					display: block;
 					min-width: 7.5rem;
@@ -1322,6 +1327,17 @@
 
 		#header nav.use-middle ul li.is-middle {
 			border-left: 0;
+		}
+
+		#workNavDropdown {
+			visibility:hidden;
+			opacity: 0;
+			transition: visibility 0.5s, opacity 0.5s ease-out;
+		}
+
+		#workNavDropdown.shown {
+			visibility:visible;
+			opacity: 1;
 		}
 
 		body.is-article-visible #header {
