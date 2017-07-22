@@ -23,29 +23,22 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 									})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-			ga('create', 'UA-91653702-1', 'auto');
-			ga('send', 'pageview');
-
-		</script>
-
-
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-									})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
+			//ga('create', 'UA-91653702-1', 'auto');
+			//ga('send', 'pageview');
+			
 			ga('create', 'UA-91653702-2', 'auto');
 			ga('send', 'pageview');
 
 		</script>
+
+
 	</head>
 	<body>
 		<!-- Wrapper -->
 		<div id="wrapper" style="overflow: scroll;">
 
 			<!-- Header -->
-			<header id="header">
+			<header id="header" style="visibility:hidden">
 				<div class="logo">
 					<span class="icon fa-diamond"></span>
 				</div>
@@ -449,7 +442,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 					<br>
 					<section>
 						<h3 class="major">Or you can send me an e-mail</h3>
-						<form method="post" action="http://formspree.io/powerpulper@gmail.com">
+						<form method="post" action="http://formspree.io/admin@diya-mukherjee.com">
 							<div class="field half first">
 								<label for="demo-name">Name</label>
 								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Anastasia" />
@@ -778,6 +771,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<script type="text/javascript">
 
+			window.onload = function () {
+				$('#header').css("visibility","visible");
+			}
+			
 			var workNav = document.getElementById("workNav");
 			var workNavDropdown = document.getElementById("workNavDropdown");
 
